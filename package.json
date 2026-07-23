@@ -1,0 +1,14 @@
+{
+  "name": "guarded_32wire_32_40bunny_323d_32platformer_41",
+  "displayName": "Guarded Wire (Bunny 3D Platformer)",
+  "version": "1.0.0",
+  "description": "Guarded Wire (Bunny 3D Platformer)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": ""
+}

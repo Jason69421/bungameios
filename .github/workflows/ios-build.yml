@@ -37,29 +37,35 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY=""
 
-      - name: Package IPA
-        run: |
-          APP_PATH=$(find build -type d -name "*.app" | head -n 1)
-
-          if [ -z "$APP_PATH" ]; then
-            echo "ERROR: No .app file found."
-            exit 1
-          fi
-
-          echo "Found app at: $APP_PATH"
-
-          rm -rf Payload
-          mkdir -p Payload
-
-          cp -R "$APP_PATH" "Payload/$(basename "$APP_PATH")"
-
-          cd Payload
-          zip -r ../App.ipa "$(basename "$APP_PATH")"
-
-          cd ..
-
-          echo "IPA created:"
-          ls -lh App.ipa
+            - name: Package IPA
+              run: |
+                APP_PATH=$(find build/Build/Products/Debug-iphoneos -maxdepth 1 -type d -name "*.app" | head -n 1)
+      
+                if [ -z "$APP_PATH" ]; then
+                  echo "ERROR: No .app found"
+                  exit 1
+                fi
+      
+                echo "Found app: $APP_PATH"
+      
+                # Clean previous files
+                rm -rf Payload App.ipa
+      
+                # Create the required IPA structure
+                mkdir -p Payload
+      
+                # Copy the .app directly inside Payload
+                cp -R "$APP_PATH" Payload/
+      
+                # Verify structure
+                echo "IPA structure:"
+                find Payload -maxdepth 2 -print
+      
+                # Create IPA from the directory containing Payload
+                zip -r App.ipa Payload
+      
+                echo "IPA created:"
+                ls -lh App.ipa
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4

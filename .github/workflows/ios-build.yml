@@ -25,17 +25,32 @@ jobs:
       - name: Add iOS platform
         run: npx cordova platform add ios
 
-      - name: Build iOS
-        run: npx cordova build ios --device
+      - name: Build unsigned iOS app
+        run: |
+          xcodebuild \
+            -workspace platforms/ios/App.xcworkspace \
+            -scheme App \
+            -configuration Debug \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
 
-      - name: Find build files
-        run: find . -name "*.ipa" -o -name "*.app"
+      - name: Find app
+        run: |
+          echo "Searching for .app files..."
+          find build -name "*.app" -type d
 
-      - name: Upload build
+      - name: Package IPA
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Debug-iphoneos/App.app Payload/App.app
+          zip -r App.ipa Payload
+
+      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: ios-build
-          path: |
-            platforms/ios/build/**/*.app
-            platforms/ios/build/**/*.ipa
-          if-no-files-found: warn
+          name: ios-ipa
+          path: App.ipa
+          if-no-files-found: error

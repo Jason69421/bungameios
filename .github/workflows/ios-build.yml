@@ -1,0 +1,41 @@
+name: Build iOS App
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Cordova
+        run: npm install -g cordova
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Add iOS platform
+        run: npx cordova platform add ios
+
+      - name: Build iOS
+        run: npx cordova build ios --device
+
+      - name: Find build files
+        run: find . -name "*.ipa" -o -name "*.app"
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: |
+            platforms/ios/build/**/*.app
+            platforms/ios/build/**/*.ipa
+          if-no-files-found: warn

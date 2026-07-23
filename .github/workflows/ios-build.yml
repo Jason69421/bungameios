@@ -1,75 +1,24 @@
-name: Build iOS App
-
-on:
-  workflow_dispatch:
-
-jobs:
-  build-ios:
-    runs-on: macos-latest
-
-    steps:
-      - name: Checkout project
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Cordova
-        run: npm install -g cordova
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Add iOS platform
-        run: npx cordova platform add ios
-
-      - name: Build unsigned iOS app
+      - name: Package IPA
         run: |
-          xcodebuild \
-            -workspace platforms/ios/App.xcworkspace \
-            -scheme App \
-            -configuration Debug \
-            -sdk iphoneos \
-            -derivedDataPath build \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""
+          APP_PATH=$(find "build/Build/Products/Debug-iphoneos" -maxdepth 1 -type d -name "*.app" | head -n 1)
 
-            - name: Package IPA
-              run: |
-                APP_PATH=$(find build/Build/Products/Debug-iphoneos -maxdepth 1 -type d -name "*.app" | head -n 1)
-      
-                if [ -z "$APP_PATH" ]; then
-                  echo "ERROR: No .app found"
-                  exit 1
-                fi
-      
-                echo "Found app: $APP_PATH"
-      
-                # Clean previous files
-                rm -rf Payload App.ipa
-      
-                # Create the required IPA structure
-                mkdir -p Payload
-      
-                # Copy the .app directly inside Payload
-                cp -R "$APP_PATH" Payload/
-      
-                # Verify structure
-                echo "IPA structure:"
-                find Payload -maxdepth 2 -print
-      
-                # Create IPA from the directory containing Payload
-                zip -r App.ipa Payload
-      
-                echo "IPA created:"
-                ls -lh App.ipa
+          if [ -z "$APP_PATH" ]; then
+            echo "ERROR: No .app found"
+            exit 1
+          fi
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
-        with:
-          name: ios-ipa
-          path: App.ipa
-          if-no-files-found: error
+          echo "Found app: $APP_PATH"
+
+          rm -rf Payload App.ipa
+          mkdir Payload
+
+          cp -R "$APP_PATH" Payload/
+
+          echo "Contents of Payload:"
+          ls -la Payload
+
+          echo "Creating IPA..."
+          zip -r App.ipa Payload
+
+          echo "IPA created successfully:"
+          ls -lh App.ipa

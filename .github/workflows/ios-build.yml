@@ -37,16 +37,12 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY=""
 
-      - name: Find and package IPA
+      - name: Package IPA
         run: |
-          echo "Searching for App.app..."
-
-          APP_PATH=$(find build platforms/ios -type d -name "App.app" | head -n 1)
+          APP_PATH=$(find build -type d -name "*.app" | head -n 1)
 
           if [ -z "$APP_PATH" ]; then
-            echo "ERROR: App.app was not found."
-            echo "Searching for all .app files:"
-            find . -type d -name "*.app"
+            echo "ERROR: No .app file found."
             exit 1
           fi
 
@@ -55,11 +51,14 @@ jobs:
           rm -rf Payload
           mkdir -p Payload
 
-          cp -R "$APP_PATH" Payload/App.app
+          cp -R "$APP_PATH" "Payload/$(basename "$APP_PATH")"
 
-          zip -r App.ipa Payload
+          cd Payload
+          zip -r ../App.ipa "$(basename "$APP_PATH")"
 
-          echo "IPA created successfully:"
+          cd ..
+
+          echo "IPA created:"
           ls -lh App.ipa
 
       - name: Upload IPA

@@ -10,7 +10,7 @@ gdjs.evtsExt__Model9Patch3D__SetInnerSize.idToCallbackMap = new Map();
 gdjs.evtsExt__Model9Patch3D__SetInnerSize.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Model9Patch3D__SetInnerSize.userFunc0x9417e0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Model9Patch3D__SetInnerSize.userFunc0xe7b7a0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const width = eventsFunctionContext.getArgument("Width");
 const height = eventsFunctionContext.getArgument("Height");
@@ -29,7 +29,7 @@ gdjs.evtsExt__Model9Patch3D__SetInnerSize.eventsList0 = function(runtimeScene, e
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Model9Patch3D__SetInnerSize.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Model9Patch3D__SetInnerSize.GDObjectObjects1;
-gdjs.evtsExt__Model9Patch3D__SetInnerSize.userFunc0x9417e0(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Model9Patch3D__SetInnerSize.userFunc0xe7b7a0(runtimeScene, objects, eventsFunctionContext);
 
 }
 

@@ -93,7 +93,7 @@ gdjs.evtsExt__Collectible__Collectible.Collectible.prototype.doStepPreEventsCont
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19867732);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(18345604);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Collectible__Collectible.Collectible.prototype.doStepPreEventsContext.GDObjectObjects1);

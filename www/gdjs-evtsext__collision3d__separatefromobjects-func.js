@@ -11,7 +11,7 @@ gdjs.evtsExt__Collision3D__SeparateFromObjects.GDObjectObjects1= [];
 gdjs.evtsExt__Collision3D__SeparateFromObjects.GDOtherObjectObjects1= [];
 
 
-gdjs.evtsExt__Collision3D__SeparateFromObjects.userFunc0x1e54388 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Collision3D__SeparateFromObjects.userFunc0x1d3e420 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 const otherObjects = eventsFunctionContext.getObjects("OtherObject");
@@ -30,7 +30,7 @@ gdjs.evtsExt__Collision3D__SeparateFromObjects.eventsList0 = function(runtimeSce
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Collision3D__SeparateFromObjects.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Collision3D__SeparateFromObjects.GDObjectObjects1;
-gdjs.evtsExt__Collision3D__SeparateFromObjects.userFunc0x1e54388(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Collision3D__SeparateFromObjects.userFunc0x1d3e420(runtimeScene, objects, eventsFunctionContext);
 
 }
 

@@ -10,7 +10,7 @@ gdjs.evtsExt__Tween3D__SetTintNumber.idToCallbackMap = new Map();
 gdjs.evtsExt__Tween3D__SetTintNumber.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Tween3D__SetTintNumber.userFunc0xe13dc8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Tween3D__SetTintNumber.userFunc0x1092f88 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const color = eventsFunctionContext.getArgument("Color");
 
@@ -38,7 +38,7 @@ gdjs.evtsExt__Tween3D__SetTintNumber.eventsList0 = function(runtimeScene, events
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Tween3D__SetTintNumber.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Tween3D__SetTintNumber.GDObjectObjects1;
-gdjs.evtsExt__Tween3D__SetTintNumber.userFunc0xe13dc8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Tween3D__SetTintNumber.userFunc0x1092f88(runtimeScene, objects, eventsFunctionContext);
 
 }
 

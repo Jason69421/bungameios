@@ -352,7 +352,7 @@ isConditionTrue_0 = !isConditionTrue_1;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14140948);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19682284);
 }
 }
 }
@@ -745,7 +745,7 @@ gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototyp
 gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.userFunc0x1ddf180 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.userFunc0x1bfbb88 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behavior = object.getBehavior(eventsFunctionContext.getBehaviorName("Behavior"));
@@ -762,7 +762,7 @@ gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototyp
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.GDObjectObjects1;
-gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.userFunc0x1ddf180(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasBackwardKeyPressedContext.userFunc0x1bfbb88(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -851,7 +851,7 @@ gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototyp
 gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.userFunc0x1dd4bc8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.userFunc0x1bedd90 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behavior = object.getBehavior(eventsFunctionContext.getBehaviorName("Behavior"));
@@ -868,7 +868,7 @@ gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototyp
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.GDObjectObjects1;
-gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.userFunc0x1dd4bc8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__PlatformerCamera3D__PlatformerCamera3D.PlatformerCamera3D.prototype.WasStickUsedContext.userFunc0x1bedd90(runtimeScene, objects, eventsFunctionContext);
 
 }
 

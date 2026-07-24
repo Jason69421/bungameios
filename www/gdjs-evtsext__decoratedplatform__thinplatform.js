@@ -64,7 +64,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__DecoratedPlatform__ThinPlatform.ThinPla
 gdjs.evtsExt__DecoratedPlatform__ThinPlatform.ThinPlatform.prototype.doStepPostEventsContext.GDPlatformObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19979148);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(18952244);
 }
 }
 if (isConditionTrue_0) {

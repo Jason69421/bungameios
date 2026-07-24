@@ -433,7 +433,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.Advanced
 gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(11985508);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(18840308);
 }
 }
 }
@@ -462,7 +462,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.Advanced
 gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(12053572);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(18844396);
 }
 }
 if (isConditionTrue_0) {
@@ -2030,7 +2030,7 @@ gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKey
 gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.userFunc0x1c4eb90 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.userFunc0x1ab64f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behavior = object.getBehavior(eventsFunctionContext.getBehaviorName("Behavior"));
@@ -2046,7 +2046,7 @@ gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKey
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.GDObjectObjects1;
-gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.userFunc0x1c4eb90(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__AdvancedJump3D__AdvancedJump3D.AdvancedJump3D.prototype.WasJumpKeyPressedContext.userFunc0x1ab64f0(runtimeScene, objects, eventsFunctionContext);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__Gamepads__ConnectedGamepadsCount = {};
 gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xa408d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xd14518 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const gamepads = navigator.getGamepads ? navigator.getGamepads() : [];
@@ -28,7 +28,7 @@ gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xa408d0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xd14518(runtimeScene, eventsFunctionContext);
 
 }
 

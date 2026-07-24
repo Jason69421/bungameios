@@ -9,7 +9,7 @@ gdjs.evtsExt__ShakeObject3D__SetPersistence = {};
 gdjs.evtsExt__ShakeObject3D__SetPersistence.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ShakeObject3D__SetPersistence.userFunc0xface48 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__SetPersistence.userFunc0x9f66d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -20,7 +20,7 @@ gdjs.evtsExt__ShakeObject3D__SetPersistence.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__ShakeObject3D__SetPersistence.userFunc0xface48(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject3D__SetPersistence.userFunc0x9f66d0(runtimeScene, eventsFunctionContext);
 
 }
 

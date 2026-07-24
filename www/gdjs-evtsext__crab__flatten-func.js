@@ -13,7 +13,7 @@ gdjs.evtsExt__Crab__Flatten.GDCrabObjects3= [];
 gdjs.evtsExt__Crab__Flatten.GDCrabObjects4= [];
 
 
-gdjs.evtsExt__Crab__Flatten.asyncCallback19857204 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__Crab__Flatten.asyncCallback18325108 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.GDCrabObjects4);
 
@@ -27,7 +27,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(19857204, gdjs.evtsExt__Crab__Flatten.asyncCallback19857204);
+gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(18325108, gdjs.evtsExt__Crab__Flatten.asyncCallback18325108);
 gdjs.evtsExt__Crab__Flatten.eventsList0 = function(runtimeScene, eventsFunctionContext, asyncObjectsList) {
 
 {
@@ -39,14 +39,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
 for (const obj of gdjs.evtsExt__Crab__Flatten.GDCrabObjects3) asyncObjectsList.addObject("Crab", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback19857204(runtimeScene, eventsFunctionContext, asyncObjectsList)), 19857204, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.25), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback18325108(runtimeScene, eventsFunctionContext, asyncObjectsList)), 18325108, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.evtsExt__Crab__Flatten.asyncCallback19856532 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__Crab__Flatten.asyncCallback18324708 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.GDCrabObjects3);
 
@@ -59,7 +59,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.
 gdjs.evtsExt__Crab__Flatten.eventsList0(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(19856532, gdjs.evtsExt__Crab__Flatten.asyncCallback19856532);
+gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(18324708, gdjs.evtsExt__Crab__Flatten.asyncCallback18324708);
 gdjs.evtsExt__Crab__Flatten.eventsList1 = function(runtimeScene, eventsFunctionContext, asyncObjectsList) {
 
 {
@@ -71,14 +71,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
 for (const obj of gdjs.evtsExt__Crab__Flatten.GDCrabObjects2) asyncObjectsList.addObject("Crab", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.125), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback19856532(runtimeScene, eventsFunctionContext, asyncObjectsList)), 19856532, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.125), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback18324708(runtimeScene, eventsFunctionContext, asyncObjectsList)), 18324708, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.evtsExt__Crab__Flatten.asyncCallback19855780 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__Crab__Flatten.asyncCallback18324268 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.GDCrabObjects2);
 
@@ -91,7 +91,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Crab"), gdjs.evtsExt__Crab__Flatten.
 gdjs.evtsExt__Crab__Flatten.eventsList1(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(19855780, gdjs.evtsExt__Crab__Flatten.asyncCallback19855780);
+gdjs.evtsExt__Crab__Flatten.idToCallbackMap.set(18324268, gdjs.evtsExt__Crab__Flatten.asyncCallback18324268);
 gdjs.evtsExt__Crab__Flatten.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -102,7 +102,7 @@ gdjs.evtsExt__Crab__Flatten.eventsList2 = function(runtimeScene, eventsFunctionC
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
 for (const obj of gdjs.evtsExt__Crab__Flatten.GDCrabObjects1) asyncObjectsList.addObject("Crab", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.5), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback19855780(runtimeScene, eventsFunctionContext, asyncObjectsList)), 19855780, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.5), (runtimeScene) => (gdjs.evtsExt__Crab__Flatten.asyncCallback18324268(runtimeScene, eventsFunctionContext, asyncObjectsList)), 18324268, asyncObjectsList);
 }
 }
 
